@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryCalculator.Web", "SalaryCalculator.Web\SalaryCalculator.Web.csproj", "{AF846057-B04C-4BC4-84A6-82B924C02482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryCalculator.Domain", "SalaryCalculator.Domain\SalaryCalculator.Domain.csproj", "{C5FE50D5-5DFB-4F8D-AD9E-0C8DCE4B5C3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryCalculator.Domain", "SalaryCalculator.Domain\SalaryCalculator.Domain.csproj", "{C5FE50D5-5DFB-4F8D-AD9E-0C8DCE4B5C3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryCalculator.DAL", "SalaryCalculator.DAL\SalaryCalculator.DAL.csproj", "{8A8B860F-3BAF-4C40-A198-1A03A0223C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryCalculator.DAL", "SalaryCalculator.DAL\SalaryCalculator.DAL.csproj", "{8A8B860F-3BAF-4C40-A198-1A03A0223C51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryCalculator.Domain.EF", "SalaryCalculator.Domain.EF\SalaryCalculator.Domain.EF.csproj", "{A9D33EA8-4428-47E3-9C0E-2148A1BE15B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AF846057-B04C-4BC4-84A6-82B924C02482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF846057-B04C-4BC4-84A6-82B924C02482}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF846057-B04C-4BC4-84A6-82B924C02482}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF846057-B04C-4BC4-84A6-82B924C02482}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C5FE50D5-5DFB-4F8D-AD9E-0C8DCE4B5C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5FE50D5-5DFB-4F8D-AD9E-0C8DCE4B5C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5FE50D5-5DFB-4F8D-AD9E-0C8DCE4B5C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{8A8B860F-3BAF-4C40-A198-1A03A0223C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A8B860F-3BAF-4C40-A198-1A03A0223C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A8B860F-3BAF-4C40-A198-1A03A0223C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D33EA8-4428-47E3-9C0E-2148A1BE15B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D33EA8-4428-47E3-9C0E-2148A1BE15B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D33EA8-4428-47E3-9C0E-2148A1BE15B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D33EA8-4428-47E3-9C0E-2148A1BE15B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
