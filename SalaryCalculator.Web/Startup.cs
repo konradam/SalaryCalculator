@@ -12,6 +12,8 @@ using SalaryCalculator.Web.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SalaryCalculator.DAL;
+using SalaryCalculator.DAL.Interfaces;
 
 namespace SalaryCalculator.Web
 {
@@ -34,6 +36,7 @@ namespace SalaryCalculator.Web
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddSingleton<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

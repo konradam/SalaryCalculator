@@ -18,6 +18,7 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\SalaryCalculator.DAL\SalaryCalculator.DAL.csproj" />
     <ProjectReference Include="..\SalaryCalculator.Domain.EF\SalaryCalculator.Domain.EF.csproj" />
   </ItemGroup>
 
