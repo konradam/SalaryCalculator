@@ -12,4 +12,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SalaryCalculator.Domain\SalaryCalculator.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

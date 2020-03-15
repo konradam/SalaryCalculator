@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SalaryCalculator.Domain.Models;
 
 namespace SalaryCalculator.Web.Data
 {
@@ -19,6 +20,17 @@ namespace SalaryCalculator.Web.Data
                 Database.EnsureCreated();
                 created = true;
             }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //Seed sample data
+            modelBuilder.Entity<Account>().HasData(
+                new {Id = 1, Surname = "Strugala"},
+                new {Id = 2, Surname = "Adamczyk"}
+            );
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
