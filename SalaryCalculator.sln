@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryCalculator.DAL", "Sal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryCalculator.Domain.EF", "SalaryCalculator.Domain.EF\SalaryCalculator.Domain.EF.csproj", "{A9D33EA8-4428-47E3-9C0E-2148A1BE15B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalaryCalculator.Web", "SalaryCalculator.Web\SalaryCalculator.Web.csproj", "{4B12A6A8-6E93-4AFF-A565-38CD2703894E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryCalculator.Web", "SalaryCalculator.Web\SalaryCalculator.Web.csproj", "{4B12A6A8-6E93-4AFF-A565-38CD2703894E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
