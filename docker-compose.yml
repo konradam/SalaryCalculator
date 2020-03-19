@@ -2,16 +2,17 @@
 
 services:
   postgres:
-    image: postgres:9.6.3
-    container_name: salary_calculator_db
+    image: postgres:12.2
     environment:
-      POSTGRES_DB: salary_calculator
+      POSTGRES_DB: salary_calculator_db
       POSTGRES_USER: salary_app
       POSTGRES_PASSWORD: docker
     ports:
       - 5432:5432
     volumes:
-      - ./db:/docker-entrypoint-initdb.d
+      - /var/lib/postgresql/data
+    networks:
+       - mynetwork
 
   web:
     image: salary_calculator
@@ -19,9 +20,14 @@ services:
     build:
       context: .
     ports:
-      - 5000:80
-      - 5005:433
+      - 5000:5000
     environment:
       ASPNETCORE_ENVIRONMENT: Production
     depends_on:
       - postgres
+    networks:
+       - mynetwork
+
+networks:
+  mynetwork:
+     driver: bridge
